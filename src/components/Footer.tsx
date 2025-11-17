@@ -56,10 +56,10 @@ const Footer = () => {
                 <Phone className="h-5 w-5 text-primary flex-shrink-0" />
                 <div className="text-sm text-muted-foreground">
                   <a href="https://wa.me/628113059222" className="hover:text-primary transition-colors block">
-                    0811-3059-222 (Ratih)
+                    0811-3059-222
                   </a>
-                  <a href="https://wa.me/6281330675600" className="hover:text-primary transition-colors block">
-                    0813-3067-5600 (Wulan)
+                  <a href="https://wa.me/6282228302403" className="hover:text-primary transition-colors block">
+                    0822-2830-2403
                   </a>
                 </div>
               </li>

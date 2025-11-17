@@ -71,7 +71,7 @@ const Header = () => {
               </Link>
             ))}
             <div className="px-4 pt-2">
-              <a href="https://wa.me/6281330675600" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/6282228302403" target="_blank" rel="noopener noreferrer">
                 <Button className="w-full btn-primary-gradient">Hubungi Kami</Button>
               </a>
             </div>

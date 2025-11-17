@@ -94,7 +94,7 @@ const Catalog = () => {
                   </p>
                   <div className="flex gap-3">
                     <a 
-                      href={`https://wa.me/6281330675600?text=Halo, saya tertarik dengan produk ${product.title}`}
+                      href={`https://wa.me/6282228302403?text=Halo, saya tertarik dengan produk ${product.title}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex-1"
@@ -104,7 +104,7 @@ const Catalog = () => {
                       </Button>
                     </a>
                     <a 
-                      href={`https://wa.me/6281330675600?text=Halo, bisa minta detail lebih lanjut tentang ${product.title}?`}
+                      href={`https://wa.me/6282228302403?text=Halo, bisa minta detail lebih lanjut tentang ${product.title}?`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -129,7 +129,7 @@ const Catalog = () => {
           <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
             Kami siap membantu mewujudkan desain custom sesuai kebutuhan Anda. Hubungi kami untuk konsultasi gratis!
           </p>
-          <a href="https://wa.me/6281330675600" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/6282228302403" target="_blank" rel="noopener noreferrer">
             <Button size="lg" className="btn-primary-gradient text-lg px-8">
               Konsultasi via WhatsApp
             </Button>

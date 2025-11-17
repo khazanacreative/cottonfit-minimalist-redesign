@@ -87,7 +87,7 @@ const Home = () => {
                 Lihat Katalog
               </Button>
             </Link>
-            <a href="https://wa.me/6281330675600" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/6282228302403" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="w-full sm:w-auto text-lg px-8 bg-accent hover:bg-accent/90">
                 Hubungi Kami
               </Button>
@@ -193,7 +193,7 @@ const Home = () => {
           <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto">
             Hubungi kami sekarang untuk konsultasi gratis dan dapatkan penawaran terbaik!
           </p>
-          <a href="https://wa.me/6281330675600" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/6282228302403" target="_blank" rel="noopener noreferrer">
             <Button size="lg" variant="secondary" className="text-lg px-8">
               Hubungi via WhatsApp
             </Button>

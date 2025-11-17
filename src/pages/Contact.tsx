@@ -31,7 +31,7 @@ Pesan:
 ${formData.message}`;
 
     // Open WhatsApp with pre-filled message
-    const waUrl = `https://wa.me/6281330675600?text=${encodeURIComponent(waMessage)}`;
+    const waUrl = `https://wa.me/6282228302403?text=${encodeURIComponent(waMessage)}`;
     window.open(waUrl, "_blank");
     
     toast.success("Membuka WhatsApp...");
@@ -109,16 +109,16 @@ ${formData.message}`;
                         className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
                       >
                         <MessageCircle className="h-4 w-4" />
-                        <span>0811-3059-222 (Ratih)</span>
+                        <span>0811-3059-222</span>
                       </a>
                       <a
-                        href="https://wa.me/6281330675600"
+                        href="https://wa.me/6282228302403"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
                       >
                         <MessageCircle className="h-4 w-4" />
-                        <span>0813-3067-5600 (Wulan)</span>
+                        <span>0822-2830-2403</span>
                       </a>
                     </div>
                   </div>
