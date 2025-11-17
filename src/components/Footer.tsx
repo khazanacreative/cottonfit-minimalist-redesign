@@ -1,5 +1,5 @@
 import { Phone, Mail, MapPin, Instagram } from "lucide-react";
-import logo from "@/assets/cottonfit-logo.jpg";
+import logo from "@/assets/cottonfit-logo.png";
 
 const Footer = () => {
   return (
