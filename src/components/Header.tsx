@@ -38,7 +38,7 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
-            <a href="https://wa.me/6281330675600" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/628113059222" target="_blank" rel="noopener noreferrer">
               <Button className="btn-primary-gradient">Hubungi Kami</Button>
             </a>
           </nav>
