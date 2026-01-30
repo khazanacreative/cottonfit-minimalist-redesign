@@ -75,10 +75,10 @@ const Home = () => {
         </div>
         
         <div className="container relative z-10 mx-auto px-4 py-20 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue/90 mb-6 leading-tight animate-fade-in">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-800 mb-6 leading-tight animate-fade-in">
             Jasa Pembuatan Kaos Custom Berkualitas
           </h1>
-          <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto animate-fade-in">
+          <p className="text-lg md:text-xl text-blue-800 mb-8 max-w-2xl mx-auto animate-fade-in">
             Cottonfit — Solusi kaos custom untuk daycare, komunitas, gathering, dan kebutuhan lainnya.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
