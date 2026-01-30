@@ -71,11 +71,11 @@ const Home = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${heroImage})` }}
         >
-          <div className="absolute inset-0 bg-white-500 from-primary/95 to-primary/70" />
+          <div className="absolute inset-0 bg-white from-primary/95 to-primary/70" />
         </div>
         
         <div className="container relative z-10 mx-auto px-4 py-20 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-500 mb-6 leading-tight animate-fade-in">
             Jasa Pembuatan Kaos Custom Berkualitas
           </h1>
           <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto animate-fade-in">
