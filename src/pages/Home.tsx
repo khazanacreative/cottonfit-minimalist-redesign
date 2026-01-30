@@ -83,7 +83,7 @@ const Home = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
             <Link to="/catalog">
-              <Button size="lg" className="w-full sm:w-auto text-lg px-8 bg-accent hover:bg-accent/90">
+              <Button size="lg" className="w-full sm:w-auto text-lg px-8 bg-blue-900 hover:bg-accent/90">
                 Lihat Katalog
               </Button>
             </Link>
