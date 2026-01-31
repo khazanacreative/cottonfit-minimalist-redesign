@@ -56,11 +56,11 @@ ${formData.message}`;
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary to-primary/80 text-primary-foreground py-20">
+      <section className="bg-white py-16 shadow-md">
         <div className="container mx-auto px-4 text-center">
-          <MessageCircle className="h-16 w-16 mx-auto mb-6 opacity-90" />
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">Hubungi Kami</h1>
-          <p className="text-xl opacity-90 max-w-3xl mx-auto animate-fade-in">
+          <MessageCircle className="h-16 w-16 mx-auto mb-6 text-primary" />
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary animate-fade-in">Hubungi Kami</h1>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-in">
             Kami siap membantu mewujudkan kebutuhan kaos custom Anda. Jangan ragu untuk bertanya!
           </p>
         </div>

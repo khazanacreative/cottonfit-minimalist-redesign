@@ -18,10 +18,10 @@ const About = () => {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary to-primary/80 text-primary-foreground py-20">
+      <section className="bg-white py-16 shadow-md">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">Tentang Cottonfit</h1>
-          <p className="text-xl opacity-90 max-w-3xl mx-auto animate-fade-in">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary animate-fade-in">Tentang Cottonfit</h1>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-in">
             Brand fashion custom yang menyediakan kaos berkualitas tinggi dengan bahan cotton combed premium
           </p>
         </div>

@@ -1,46 +1,55 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ShoppingBag } from "lucide-react";
+import { Link } from "react-router-dom";
 import productShowcase from "@/assets/product-showcase.jpg";
 
 const Catalog = () => {
   const products = [
     {
+      slug: "kaos-komunitas-gathering",
       title: "Kaos Komunitas / Gathering",
       description: "Sempurna untuk acara komunitas, gathering, atau reuni. Minimum order fleksibel dengan harga spesial untuk jumlah banyak.",
       image: productShowcase,
     },
     {
+      slug: "kaos-kelas-daycare",
       title: "Kaos Kelas / Daycare",
       description: "Seragam kelas atau daycare dengan bahan yang aman untuk anak-anak. Menyerap keringat dan tidak mudah luntur.",
       image: productShowcase,
     },
     {
+      slug: "kaos-custom-satuan",
       title: "Kaos Custom Satuan",
       description: "Kaos custom berkualitas untuk kebutuhan personal. Tersedia berbagai ukuran dan warna. Bahan Cotton Combed 24s yang lembut dan nyaman.",
       image: productShowcase,
     },
     {
+      slug: "kaos-polo-custom",
       title: "Kaos Polo Custom",
       description: "Polo shirt custom untuk kebutuhan formal atau semi-formal. Tersedia dengan berbagai pilihan kerah dan warna.",
       image: productShowcase,
     },
     {
+      slug: "jersey-club",
       title: "Jersey Club",
       description: "Jersey olahraga custom untuk klub atau tim Anda. Bahan dry-fit yang nyaman dan menyerap keringat.",
       image: productShowcase,
     },
     {
+      slug: "tunik-custom",
       title: "Tunik Custom",
       description: "Tunik custom dengan berbagai model dan desain. Cocok untuk seragam kerja atau acara formal.",
       image: productShowcase,
     },
     {
+      slug: "patch-logo-bordir",
       title: "Patch / Logo Bordir",
       description: "Logo atau patch custom dengan teknik bordir berkualitas tinggi. Awet dan tidak mudah rusak.",
       image: productShowcase,
     },
     {
+      slug: "logo-print-custom",
       title: "Logo Print Custom",
       description: "Printing logo dengan berbagai teknik: DTF, Sablon, atau Digital Print. Hasil tajam dan tahan lama.",
       image: productShowcase,
@@ -50,11 +59,11 @@ const Catalog = () => {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary to-primary/80 text-primary-foreground py-20">
+      <section className="bg-white py-16 shadow-md">
         <div className="container mx-auto px-4 text-center">
-          <ShoppingBag className="h-16 w-16 mx-auto mb-6 opacity-90" />
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">Katalog Produk</h1>
-          <p className="text-xl opacity-90 max-w-3xl mx-auto animate-fade-in">
+          <ShoppingBag className="h-16 w-16 mx-auto mb-6 text-primary" />
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary animate-fade-in">Katalog Produk</h1>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-in">
             Jelajahi berbagai pilihan produk kaos custom berkualitas tinggi untuk semua kebutuhan Anda
           </p>
         </div>
@@ -103,15 +112,11 @@ const Catalog = () => {
                         Pesan Sekarang
                       </Button>
                     </a>
-                    <a 
-                      href={`https://wa.me/6282228302403?text=Halo, bisa minta detail lebih lanjut tentang ${product.title}?`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <Link to={`/catalog/${product.slug}`}>
                       <Button variant="outline">
                         Detail
                       </Button>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </Card>
