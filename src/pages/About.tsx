@@ -1,15 +1,15 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Target, Lightbulb, ShieldCheck, Users, Shirt, Award, Zap, Heart } from "lucide-react";
+import { Target, Lightbulb, ShieldCheck, Users, Shirt, Award, Zap, Heart, Baby, Building } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const About = () => {
   const services = [
     { icon: <Users className="h-8 w-8" />, title: "Kaos Komunitas/Gathering", description: "Kaos seragam untuk acara komunitas dan gathering" },
-    { icon: <Heart className="h-8 w-8" />, title: "Kaos Kelas/Daycare", description: "Seragam nyaman untuk anak-anak sekolah dan daycare" },
+    { icon: <Baby className="h-8 w-8" />, title: "Kaos Kelas/Daycare", description: "Seragam nyaman untuk anak-anak sekolah dan daycare" },
     { icon: <Shirt className="h-8 w-8" />, title: "Kaos Satuan", description: "Pesanan kaos custom dalam jumlah satuan" },
-    { icon: <Award className="h-8 w-8" />, title: "Kaos Seragam Team Kerja", description: "Seragam profesional untuk tim kerja" },
-    { icon: <Shirt className="h-8 w-8" />, title: "Kaos Polo Custom", description: "Polo shirt custom dengan desain Anda" },
+    { icon: <Building className="h-8 w-8" />, title: "Kaos Seragam Team Kerja", description: "Seragam profesional untuk tim kerja" },
+    { icon: <Award className="h-8 w-8" />, title: "Kaos Polo Custom", description: "Polo shirt custom dengan desain Anda" },
     { icon: <Zap className="h-8 w-8" />, title: "Jersey Custom", description: "Jersey olahraga dengan desain tim Anda" },
     { icon: <Heart className="h-8 w-8" />, title: "Tunik Custom", description: "Tunik custom dengan berbagai desain" },
     { icon: <ShieldCheck className="h-8 w-8" />, title: "Logo / Patch Custom", description: "Bordir dan print logo berkualitas tinggi" },
