@@ -185,7 +185,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA Section – Icon Only */}
       <section className="py-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <Users className="h-16 w-16 mx-auto mb-6 opacity-90" />
@@ -194,69 +194,32 @@ const Home = () => {
             Siap Mewujudkan Desain Kaos Custom Anda?
           </h2>
 
-          <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto">
-            Hubungi kami melalui media sosial favorit Anda untuk konsultasi gratis
-            dan penawaran terbaik!
+          <p className="text-lg mb-8 opacity-90">
+            Hubungi kami melalui media sosial favorit Anda
           </p>
 
-          <div className="flex flex-wrap justify-center gap-4">
-            <a
-              href="https://wa.me/6282228302403"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button
-                size="lg"
-                variant="secondary"
-                className="flex items-center gap-2"
-              >
-                <IconWA className="h-5 w-5" />
-                WhatsApp
+          <div className="flex justify-center gap-4">
+            <a href="https://wa.me/6282228302403" target="_blank">
+              <Button size="icon" variant="secondary">
+                <IconWA className="h-6 w-6" />
               </Button>
             </a>
 
-            <a
-              href="https://instagram.com/USERNAME"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button
-                size="lg"
-                variant="secondary"
-                className="flex items-center gap-2"
-              >
-                <IconIG className="h-5 w-5" />
-                Instagram
+            <a href="https://instagram.com/USERNAME" target="_blank">
+              <Button size="icon" variant="secondary">
+                <IconIG className="h-6 w-6" />
               </Button>
             </a>
 
-            <a
-              href="https://www.tiktok.com/@USERNAME"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button
-                size="lg"
-                variant="secondary"
-                className="flex items-center gap-2"
-              >
-                <IconTiktok className="h-5 w-5" />
-                TikTok
+            <a href="https://www.tiktok.com/@USERNAME" target="_blank">
+              <Button size="icon" variant="secondary">
+                <IconTiktok className="h-6 w-6" />
               </Button>
             </a>
 
-            <a
-              href="https://shopee.co.id/USERNAME"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button
-                size="lg"
-                variant="secondary"
-                className="flex items-center gap-2"
-              >
-                <IconShopee className="h-5 w-5" />
-                Shopee
+            <a href="https://shopee.co.id/USERNAME" target="_blank">
+              <Button size="icon" variant="secondary">
+                <IconShopee className="h-6 w-6" />
               </Button>
             </a>
           </div>
