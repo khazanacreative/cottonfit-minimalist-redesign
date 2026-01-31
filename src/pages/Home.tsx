@@ -1,4 +1,4 @@
-import productShowcase from "@/assets/product-showcase.jpg"; 
+export { default as ProductShowcase } from "./product-showcase.jpg";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Users, Star } from "lucide-react";
