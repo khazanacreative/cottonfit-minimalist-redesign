@@ -26,11 +26,6 @@ const Home = () => {
 
   const categories = [
     {
-      title: "Kaos Satuan",
-      description: "Perfect untuk kebutuhan personal atau kado spesial",
-      image: productShowcase,
-    },
-    {
       title: "Kaos Komunitas / Gathering",
       description: "Satukan kebersamaan dengan desain unik komunitas Anda",
       image: productShowcase,
@@ -38,6 +33,11 @@ const Home = () => {
     {
       title: "Kaos Kelas / Daycare",
       description: "Seragam nyaman untuk anak-anak dengan bahan berkualitas",
+      image: productShowcase,
+    },
+    {
+      title: "Kaos Satuan",
+      description: "Perfect untuk kebutuhan personal atau kado spesial",
       image: productShowcase,
     },
   ];
