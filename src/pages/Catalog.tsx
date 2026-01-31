@@ -2,59 +2,84 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ShoppingBag } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import productShowcase from "@/assets/product-showcase.jpg";
 
+type FilterCategory = "all" | "kaos" | "polo" | "jersey" | "tunik" | "logo";
+
 const Catalog = () => {
+  const [activeFilter, setActiveFilter] = useState<FilterCategory>("all");
   const products = [
     {
       slug: "kaos-komunitas-gathering",
       title: "Kaos Komunitas / Gathering",
       description: "Sempurna untuk acara komunitas, gathering, atau reuni. Minimum order fleksibel dengan harga spesial untuk jumlah banyak.",
       image: productShowcase,
+      category: "kaos" as FilterCategory,
     },
     {
       slug: "kaos-kelas-daycare",
       title: "Kaos Kelas / Daycare",
       description: "Seragam kelas atau daycare dengan bahan yang aman untuk anak-anak. Menyerap keringat dan tidak mudah luntur.",
       image: productShowcase,
+      category: "kaos" as FilterCategory,
     },
     {
       slug: "kaos-custom-satuan",
       title: "Kaos Custom Satuan",
       description: "Kaos custom berkualitas untuk kebutuhan personal. Tersedia berbagai ukuran dan warna. Bahan Cotton Combed 24s yang lembut dan nyaman.",
       image: productShowcase,
+      category: "kaos" as FilterCategory,
     },
     {
       slug: "kaos-polo-custom",
       title: "Kaos Polo Custom",
       description: "Polo shirt custom untuk kebutuhan formal atau semi-formal. Tersedia dengan berbagai pilihan kerah dan warna.",
       image: productShowcase,
+      category: "polo" as FilterCategory,
     },
     {
       slug: "jersey-club",
       title: "Jersey Club",
       description: "Jersey olahraga custom untuk klub atau tim Anda. Bahan dry-fit yang nyaman dan menyerap keringat.",
       image: productShowcase,
+      category: "jersey" as FilterCategory,
     },
     {
       slug: "tunik-custom",
       title: "Tunik Custom",
       description: "Tunik custom dengan berbagai model dan desain. Cocok untuk seragam kerja atau acara formal.",
       image: productShowcase,
+      category: "tunik" as FilterCategory,
     },
     {
       slug: "patch-logo-bordir",
       title: "Patch / Logo Bordir",
       description: "Logo atau patch custom dengan teknik bordir berkualitas tinggi. Awet dan tidak mudah rusak.",
       image: productShowcase,
+      category: "logo" as FilterCategory,
     },
     {
       slug: "logo-print-custom",
       title: "Logo Print Custom",
       description: "Printing logo dengan berbagai teknik: DTF, Sablon, atau Digital Print. Hasil tajam dan tahan lama.",
       image: productShowcase,
+      category: "logo" as FilterCategory,
     },
   ];
+
+  const filters: { key: FilterCategory; label: string }[] = [
+    { key: "all", label: "Semua Produk" },
+    { key: "kaos", label: "Kaos" },
+    { key: "polo", label: "Polo" },
+    { key: "jersey", label: "Jersey" },
+    { key: "tunik", label: "Tunik" },
+    { key: "logo", label: "Custom Logo" },
+  ];
+
+  const filteredProducts = activeFilter === "all" 
+    ? products 
+    : products.filter(p => p.category === activeFilter);
 
   return (
     <div className="flex flex-col">
@@ -69,16 +94,20 @@ const Catalog = () => {
         </div>
       </section>
 
-      {/* Filter Section - Placeholder for future enhancement */}
+      {/* Filter Section */}
       <section className="py-8 bg-secondary border-b border-border">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap gap-3 justify-center">
-            <Button variant="default" className="btn-primary-gradient">Semua Produk</Button>
-            <Button variant="outline">Kaos</Button>
-            <Button variant="outline">Polo</Button>
-            <Button variant="outline">Jersey</Button>
-            <Button variant="outline">Tunik</Button>
-            <Button variant="outline">Custom Logo</Button>
+            {filters.map((filter) => (
+              <Button
+                key={filter.key}
+                variant={activeFilter === filter.key ? "default" : "outline"}
+                className={activeFilter === filter.key ? "btn-primary-gradient" : ""}
+                onClick={() => setActiveFilter(filter.key)}
+              >
+                {filter.label}
+              </Button>
+            ))}
           </div>
         </div>
       </section>
@@ -87,7 +116,7 @@ const Catalog = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {products.map((product, index) => (
+            {filteredProducts.map((product, index) => (
               <Card key={index} className="card-elegant overflow-hidden hover-lift group">
                 <div className="aspect-[4/3] overflow-hidden bg-secondary">
                   <img
