@@ -104,7 +104,7 @@ const Home = () => {
               <Card key={index} className="card-elegant p-8 text-center hover-lift">
                 <div className="flex justify-center mb-4">{highlight.icon}</div>
                 <h3 className="text-xl text-blue-900 font-semibold mb-3">{highlight.title}</h3>
-                <p className="text-muted-foreground text-black-900">{highlight.description}</p>
+                <p className="text-muted-foreground text-gray-900">{highlight.description}</p>
               </Card>
             ))}
           </div>
@@ -116,7 +116,7 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl text-blue-900 font-bold mb-4">Produk Unggulan Kami</h2>
-            <p className="text-muted-foreground text-black-900 text-lg max-w-2xl mx-auto">
+            <p className="text-muted-foreground text-gray-900 text-lg max-w-2xl mx-auto">
               Berbagai pilihan kaos custom berkualitas tinggi untuk semua kebutuhan Anda
             </p>
           </div>
