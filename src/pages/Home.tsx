@@ -4,6 +4,7 @@ import { CheckCircle2, Palette, TrendingUp, Users, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-tshirts.jpg";
 import productShowcase from "@/assets/product-showcase.jpg";
+import IconHarga from "@/assets/icon-harga.svg?react";
 
 const Home = () => {
   const highlights = [
@@ -18,7 +19,7 @@ const Home = () => {
       description: "Desain sesuka hati, kami siap mewujudkan ide kreatif Anda",
     },
     {
-      icon: <TrendingUp className="h-8 w-8 text-accent" />,
+      icon: <IconHarga className="w-6 h-6 text-black" />,
       title: "Harga Terjangkau & Pelayanan Cepat",
       description: "Kualitas premium dengan harga bersahabat dan proses cepat",
     },
