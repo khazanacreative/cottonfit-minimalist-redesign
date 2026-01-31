@@ -6,7 +6,7 @@ export { default as KaosAngkatan } from "./kaos-combed-angkatan.jpeg";
 export { default as KaosUmkm } from "./kaos-umkm.jpeg";
 export { default as KaosCafe } from "./kaos-cafe.jpeg";
 export { default as KaosDaycare } from "./kaos-daycare.jpeg";
-export { default as KaosCombedDaycare } from "./kaos-combed-daycaree.jpeg";
+export { default as KaosCombedDaycare } from "./kaos-combed-daycare.jpeg";
 export { default as KaosKomunitas } from "./kaos-komunitas.jpeg";
 export { default as KaosPolo } from "./kaos-polo.jpeg";
 export { default as KaosRetail } from "./kaos-combed-retail.jpeg";
