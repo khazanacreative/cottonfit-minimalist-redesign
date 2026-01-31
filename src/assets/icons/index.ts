@@ -1,3 +1,3 @@
-export { default as IconHarga } from "./IconHarga.svg?react";
-export { default as IconCottonCombed } from "./IconCottonCombed.svg?react";
-export { default as IconBebasCustom } from "./IconBebasCustom.svg?react";
+export { default as IconHarga } from "./icon-harga.svg?react";
+export { default as IconCottonCombed } from "./icon-cotton-combed.svg?react";
+export { default as IconBebasCustom } from "./icon-bebas-custom.svg?react";
