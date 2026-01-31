@@ -8,9 +8,9 @@ import productShowcase from "@/assets/product-showcase.jpg";
 const Home = () => {
   const highlights = [
     {
-      icon: <CheckCircle2 className="h-8 w-8 text-primary" />,
+      icon: <CheckCircle2 className="h-8 w-8 text-accent" />,
       title: "Bahan Cotton Combed Premium",
-      description: "Cotton Combed 24s yang lembut, alami, dan nyaman untuk kulit",
+      description: "Cotton Combed 24s yang lembut, anti bau dan nyaman untuk kulit",
     },
     {
       icon: <Palette className="h-8 w-8 text-accent" />,
@@ -18,7 +18,7 @@ const Home = () => {
       description: "Desain sesuka hati, kami siap mewujudkan ide kreatif Anda",
     },
     {
-      icon: <TrendingUp className="h-8 w-8 text-primary" />,
+      icon: <TrendingUp className="h-8 w-8 text-accent" />,
       title: "Harga Terjangkau & Pelayanan Cepat",
       description: "Kualitas premium dengan harga bersahabat dan proses cepat",
     },
@@ -103,7 +103,7 @@ const Home = () => {
             {highlights.map((highlight, index) => (
               <Card key={index} className="card-elegant p-8 text-center hover-lift">
                 <div className="flex justify-center mb-4">{highlight.icon}</div>
-                <h3 className="text-xl font-semibold mb-3">{highlight.title}</h3>
+                <h3 className="text-xl text-blue-900 font-semibold mb-3">{highlight.title}</h3>
                 <p className="text-muted-foreground">{highlight.description}</p>
               </Card>
             ))}
