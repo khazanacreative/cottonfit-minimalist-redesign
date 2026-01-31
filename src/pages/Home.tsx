@@ -40,7 +40,7 @@ const Home = () => {
     {
       title: "Kaos Satuan",
       description: "Perfect untuk kebutuhan personal atau kado spesial",
-      image: KaosRetail,
+      image: KaosSatuan,
     },
   ];
 

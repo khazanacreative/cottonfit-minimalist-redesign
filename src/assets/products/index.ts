@@ -10,3 +10,4 @@ export { default as KaosCombedDaycare } from "./kaos-combed-daycare.jpeg";
 export { default as KaosKomunitas } from "./kaos-komunitas.jpeg";
 export { default as KaosPolo } from "./kaos-polo-cvc.jpeg";
 export { default as KaosRetail } from "./kaos-combed-retail.jpeg";
+export { default as KaosSatuan } from "./kaos-satuan.jpeg";
