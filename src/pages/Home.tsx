@@ -1,9 +1,9 @@
-export { default as ProductShowcase } from "./product-showcase.jpg";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Users, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-tshirts.jpg";
+import productShowcase from "@/assets/product-showcase.jpg"; 
 import { KaosKomunitas, KaosRetail, KaosDaycare } from "@/assets/products";
 import { IconBebasCustom, IconCottonCombed, IconHarga } from "@/assets/icons";
 
