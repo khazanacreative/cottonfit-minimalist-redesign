@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Target, Lightbulb, ShieldCheck, Users, Shirt, Award, Zap, Heart, Info } from "lucide-react";
+import { Target, Lightbulb, ShieldCheck, Users, Shirt, Award, Zap, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const About = () => {
@@ -20,7 +20,7 @@ const About = () => {
       {/* Hero Section */}
       <section className="bg-white py-16 shadow-md">
         <div className="container mx-auto px-4 text-center">
-          <Info className="h-16 w-16 mx-auto mb-6 text-primary" />
+          <Shirt className="h-16 w-16 mx-auto mb-6 text-primary" />
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary animate-fade-in">Tentang Cottonfit</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-in">
             Brand fashion custom yang menyediakan kaos berkualitas tinggi dengan bahan cotton combed premium
