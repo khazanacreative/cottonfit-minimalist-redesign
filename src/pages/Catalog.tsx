@@ -6,11 +6,6 @@ import productShowcase from "@/assets/product-showcase.jpg";
 const Catalog = () => {
   const products = [
     {
-      title: "Kaos Custom Satuan",
-      description: "Kaos custom berkualitas untuk kebutuhan personal. Tersedia berbagai ukuran dan warna. Bahan Cotton Combed 24s yang lembut dan nyaman.",
-      image: productShowcase,
-    },
-    {
       title: "Kaos Komunitas / Gathering",
       description: "Sempurna untuk acara komunitas, gathering, atau reuni. Minimum order fleksibel dengan harga spesial untuk jumlah banyak.",
       image: productShowcase,
@@ -18,6 +13,11 @@ const Catalog = () => {
     {
       title: "Kaos Kelas / Daycare",
       description: "Seragam kelas atau daycare dengan bahan yang aman untuk anak-anak. Menyerap keringat dan tidak mudah luntur.",
+      image: productShowcase,
+    },
+    {
+      title: "Kaos Custom Satuan",
+      description: "Kaos custom berkualitas untuk kebutuhan personal. Tersedia berbagai ukuran dan warna. Bahan Cotton Combed 24s yang lembut dan nyaman.",
       image: productShowcase,
     },
     {
