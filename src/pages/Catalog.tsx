@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ShoppingBag } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import productShowcase from "@/assets/product-showcase.jpg";
+import { KaosKomunitas, KaosDaycare, KaosSatuan, Jersey, JerseyBola, Jaket, Kemeja, TunikCustom, KaosAngkatan, KaosCafe, KaosCombedDaycare, KaosPolo, KaosRetail, KaosUmkm } from "@/assets/products";
 
 type FilterCategory = "all" | "kaos" | "polo" | "jersey" | "tunik" | "kemeja" | "jaket";
 
@@ -14,56 +14,56 @@ const Catalog = () => {
       slug: "kaos-komunitas-gathering",
       title: "Kaos Komunitas / Gathering",
       description: "Sempurna untuk acara komunitas, gathering, atau reuni. Minimum order fleksibel dengan harga spesial untuk jumlah banyak.",
-      image: productShowcase,
+      image: KaosKomunitas,
       category: "kaos" as FilterCategory,
     },
     {
       slug: "kaos-kelas-daycare",
       title: "Kaos Kelas / Daycare",
       description: "Seragam kelas atau daycare dengan bahan yang aman untuk anak-anak. Menyerap keringat dan tidak mudah luntur.",
-      image: productShowcase,
+      image: KaosCombedDaycare,
       category: "kaos" as FilterCategory,
     },
     {
       slug: "kaos-custom-satuan",
       title: "Kaos Custom Satuan",
       description: "Kaos custom berkualitas untuk kebutuhan personal. Tersedia berbagai ukuran dan warna. Bahan Cotton Combed 24s yang lembut dan nyaman.",
-      image: productShowcase,
+      image: KaosSatuan,
       category: "kaos" as FilterCategory,
     },
     {
       slug: "kaos-polo-custom",
       title: "Kaos Polo Custom",
       description: "Polo shirt custom untuk kebutuhan formal atau semi-formal. Tersedia dengan berbagai pilihan kerah dan warna.",
-      image: productShowcase,
+      image: KaosPolo,
       category: ["polo", "kemeja"],
     },
     {
       slug: "jersey-club",
       title: "Jersey Club",
       description: "Jersey olahraga custom untuk klub atau tim Anda. Bahan dry-fit yang nyaman dan menyerap keringat.",
-      image: productShowcase,
+      image: JerseyBola,
       category: "jersey" as FilterCategory,
     },
     {
       slug: "tunik-custom",
       title: "Tunik Custom",
       description: "Tunik custom dengan berbagai model dan desain. Cocok untuk seragam kerja atau acara formal.",
-      image: productShowcase,
+      image: TunikCustom,
       category: "tunik" as FilterCategory,
     },
     {
       slug: "patch-logo-bordir",
       title: "Patch / Logo Bordir",
       description: "Logo atau patch custom dengan teknik bordir berkualitas tinggi. Awet dan tidak mudah rusak.",
-      image: productShowcase,
+      image: KaosPolo,
       category: ["polo", "kemeja"],
     },
     {
       slug: "logo-print-custom",
       title: "Logo Print Custom",
       description: "Printing logo dengan berbagai teknik: DTF, Sablon, atau Digital Print. Hasil tajam dan tahan lama.",
-      image: productShowcase,
+      image: KaosUmkm,
       category: "kaos" as FilterCategory,
     },
   ];
