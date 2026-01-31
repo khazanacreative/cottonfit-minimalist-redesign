@@ -2,14 +2,14 @@ import { useParams, Link } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, CheckCircle2, MessageCircle } from "lucide-react";
-import productShowcase from "@/assets/product-showcase.jpg";
+import { KaosKomunitas, KaosDaycare, KaosSatuan, Jersey, JerseyBola, Jaket, Kemeja, TunikCustom, KaosAngkatan, KaosCafe, KaosCombedDaycare, KaosPolo, KaosRetail, KaosUmkm } from "@/assets/products";
 
 const products = [
   {
     slug: "kaos-komunitas-gathering",
     title: "Kaos Komunitas / Gathering",
     description: "Sempurna untuk acara komunitas, gathering, atau reuni. Minimum order fleksibel dengan harga spesial untuk jumlah banyak.",
-    image: productShowcase,
+    image: KaosKomunitas,
     features: [
       "Bahan Cotton Combed 24s premium",
       "Tersedia berbagai pilihan warna",
@@ -22,7 +22,7 @@ const products = [
     slug: "kaos-kelas-daycare",
     title: "Kaos Kelas / Daycare",
     description: "Seragam kelas atau daycare dengan bahan yang aman untuk anak-anak. Menyerap keringat dan tidak mudah luntur.",
-    image: productShowcase,
+    image: KaosCombedDaycare,
     features: [
       "Bahan aman untuk anak-anak",
       "Lembut dan menyerap keringat",
@@ -35,7 +35,7 @@ const products = [
     slug: "kaos-custom-satuan",
     title: "Kaos Custom Satuan",
     description: "Kaos custom berkualitas untuk kebutuhan personal. Tersedia berbagai ukuran dan warna. Bahan Cotton Combed 24s yang lembut dan nyaman.",
-    image: productShowcase,
+    image: KaosSatuan,
     features: [
       "Bisa pesan satuan",
       "Bebas custom desain",
@@ -48,7 +48,7 @@ const products = [
     slug: "kaos-polo-custom",
     title: "Kaos Polo Custom",
     description: "Polo shirt custom untuk kebutuhan formal atau semi-formal. Tersedia dengan berbagai pilihan kerah dan warna.",
-    image: productShowcase,
+    image: KaosPolo,
     features: [
       "Bahan polo berkualitas",
       "Berbagai model kerah",
@@ -61,7 +61,7 @@ const products = [
     slug: "jersey-club",
     title: "Jersey Club",
     description: "Jersey olahraga custom untuk klub atau tim Anda. Bahan dry-fit yang nyaman dan menyerap keringat.",
-    image: productShowcase,
+    image: JerseyBola,
     features: [
       "Bahan dry-fit premium",
       "Ringan dan breathable",
@@ -74,7 +74,7 @@ const products = [
     slug: "tunik-custom",
     title: "Tunik Custom",
     description: "Tunik custom dengan berbagai model dan desain. Cocok untuk seragam kerja atau acara formal.",
-    image: productShowcase,
+    image: TunikCustom,
     features: [
       "Berbagai model tersedia",
       "Bahan nyaman dipakai seharian",
@@ -87,7 +87,7 @@ const products = [
     slug: "patch-logo-bordir",
     title: "Patch / Logo Bordir",
     description: "Logo atau patch custom dengan teknik bordir berkualitas tinggi. Awet dan tidak mudah rusak.",
-    image: productShowcase,
+    image: KaosUmkm,
     features: [
       "Teknik bordir komputer",
       "Hasil rapi dan detail",
@@ -100,7 +100,7 @@ const products = [
     slug: "logo-print-custom",
     title: "Logo Print Custom",
     description: "Printing logo dengan berbagai teknik: DTF, Sablon, atau Digital Print. Hasil tajam dan tahan lama.",
-    image: productShowcase,
+    image: KaosDaycare,
     features: [
       "Teknik DTF, Sablon, Digital Print",
       "Warna cerah dan tajam",
