@@ -4,9 +4,7 @@ import { Users, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-tshirts.jpg";
 import productShowcase from "@/assets/product-showcase.jpg";
-import IconBebasCustom from "@/assets/icon-bebas-custom.svg?react";
-import IconCottonCombed from "@/assets/icon-cotton-combed .svg?react";
-import IconHarga from "@/assets/icon-harga.svg?react";
+import { IconBebasCustom, IconCottonCombed, IconHarga } from "@/components/icons";
 
 const Home = () => {
   const highlights = [
