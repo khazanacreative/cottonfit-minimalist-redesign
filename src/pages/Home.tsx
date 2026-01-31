@@ -1,24 +1,27 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { CheckCircle2, Palette, BadgeDollarSign, Users, Star } from "lucide-react";
+import { Users, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-tshirts.jpg";
 import productShowcase from "@/assets/product-showcase.jpg";
+import IconBebasCustom from "@/assets/icon-bebas-custom.svg?react";
+import IconCottonCombed from "@/assets/icon-cotton-combed .svg?react";
+import IconHarga from "@/assets/icon-harga.svg?react";
 
 const Home = () => {
   const highlights = [
     {
-      icon: <CheckCircle2 className="h-8 w-8 text-accent" />,
+      icon: <IconCottonCombed className="h-8 w-8 text-accent" />,
       title: "Bahan Cotton Combed Premium",
       description: "Cotton Combed 24s yang lembut, anti bau dan nyaman untuk kulit",
     },
     {
-      icon: <Palette className="h-8 w-8 text-accent" />,
+      icon: <IconBebasCustom className="h-8 w-8 text-accent" />,
       title: "Bebas Custom Sesuai Desain",
       description: "Desain sesuka hati, kami siap mewujudkan ide kreatif Anda",
     },
     {
-      icon: <BadgeDollarSign className="h-8 w-8 text-accent" />,
+      icon: <IconHarga className="h-8 w-8 text-accent" />,
       title: "Harga Terjangkau & Pelayanan Cepat",
       description: "Kualitas premium dengan harga bersahabat dan proses cepat",
     },
