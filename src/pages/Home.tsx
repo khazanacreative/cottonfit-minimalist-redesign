@@ -4,7 +4,6 @@ import { Users, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-tshirts.jpg";
 import productShowcase from "@/assets/product-showcase.jpg";
-import { KaosKomunitas, KaosRetail, KaosDaycare } from "@/assets/products";
 import { IconBebasCustom, IconCottonCombed, IconHarga } from "@/assets/icons";
 
 const Home = () => {
@@ -30,17 +29,17 @@ const Home = () => {
     {
       title: "Kaos Komunitas / Gathering",
       description: "Satukan kebersamaan dengan desain unik komunitas Anda",
-      image: KaosKomunitas,
+      image: productShowcase,
     },
     {
       title: "Kaos Kelas / Daycare",
       description: "Seragam nyaman untuk anak-anak dengan bahan berkualitas",
-      image: KaosDaycare,
+      image: productShowcase,
     },
     {
       title: "Kaos Satuan",
       description: "Perfect untuk kebutuhan personal atau kado spesial",
-      image: KaosRetail,
+      image: productShowcase,
     },
   ];
 
