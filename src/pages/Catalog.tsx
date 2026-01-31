@@ -36,7 +36,7 @@ const Catalog = () => {
       title: "Kaos Polo Custom",
       description: "Polo shirt custom untuk kebutuhan formal atau semi-formal. Tersedia dengan berbagai pilihan kerah dan warna.",
       image: productShowcase,
-      category: "polo", "kemeja" as FilterCategory,
+      category: ["polo", "kemeja"] as FilterCategory[],
     },
     {
       slug: "jersey-club",
@@ -57,7 +57,7 @@ const Catalog = () => {
       title: "Patch / Logo Bordir",
       description: "Logo atau patch custom dengan teknik bordir berkualitas tinggi. Awet dan tidak mudah rusak.",
       image: productShowcase,
-      category: "kemeja", "polo" as FilterCategory,
+      category: ["polo", "kemeja"] as FilterCategory[],
     },
     {
       slug: "logo-print-custom",
