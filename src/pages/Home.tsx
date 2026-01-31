@@ -104,7 +104,7 @@ const Home = () => {
               <Card key={index} className="card-elegant p-8 text-center hover-lift">
                 <div className="flex justify-center mb-4">{highlight.icon}</div>
                 <h3 className="text-xl text-blue-900 font-semibold mb-3">{highlight.title}</h3>
-                <p className="text-muted-foreground">{highlight.description}</p>
+                <p className="text-muted-foreground text-black-900">{highlight.description}</p>
               </Card>
             ))}
           </div>
