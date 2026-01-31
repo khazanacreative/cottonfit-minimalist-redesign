@@ -4,7 +4,7 @@ import { Users, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-tshirts.jpg";
 import productShowcase from "@/assets/product-showcase.jpg";
-import { IconBebasCustom, IconCottonCombed, IconHarga } from "@/assets/icons";
+import { IconBebasCustom, IconCottonCombed, IconHarga, IconWA, IconIG, IconTiktok, IconShopee } from "@/assets/icons";
 import { KaosKomunitas, KaosDaycare, KaosSatuan } from "@/assets/products";
 
 const Home = () => {
@@ -189,17 +189,77 @@ const Home = () => {
       <section className="py-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <Users className="h-16 w-16 mx-auto mb-6 opacity-90" />
+
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Siap Mewujudkan Desain Kaos Custom Anda?
           </h2>
+
           <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto">
-            Hubungi kami sekarang untuk konsultasi gratis dan dapatkan penawaran terbaik!
+            Hubungi kami melalui media sosial favorit Anda untuk konsultasi gratis
+            dan penawaran terbaik!
           </p>
-          <a href="https://wa.me/6282228302403" target="_blank" rel="noopener noreferrer">
-            <Button size="lg" variant="secondary" className="text-lg px-8">
-              Hubungi via WhatsApp
-            </Button>
-          </a>
+
+          <div className="flex flex-wrap justify-center gap-4">
+            <a
+              href="https://wa.me/6282228302403"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                size="lg"
+                variant="secondary"
+                className="flex items-center gap-2"
+              >
+                <IconWA className="h-5 w-5" />
+                WhatsApp
+              </Button>
+            </a>
+
+            <a
+              href="https://instagram.com/USERNAME"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                size="lg"
+                variant="secondary"
+                className="flex items-center gap-2"
+              >
+                <IconIG className="h-5 w-5" />
+                Instagram
+              </Button>
+            </a>
+
+            <a
+              href="https://www.tiktok.com/@USERNAME"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                size="lg"
+                variant="secondary"
+                className="flex items-center gap-2"
+              >
+                <IconTiktok className="h-5 w-5" />
+                TikTok
+              </Button>
+            </a>
+
+            <a
+              href="https://shopee.co.id/USERNAME"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                size="lg"
+                variant="secondary"
+                className="flex items-center gap-2"
+              >
+                <IconShopee className="h-5 w-5" />
+                Shopee
+              </Button>
+            </a>
+          </div>
         </div>
       </section>
     </div>
