@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-tshirts.jpg";
 import productShowcase from "@/assets/product-showcase.jpg";
 import { IconBebasCustom, IconCottonCombed, IconHarga } from "@/assets/icons";
-import { KaosKomunitas, KaosDaycare, KaosRetail } from "@/assets/products";
+import { KaosKomunitas, KaosDaycare, KaosSatuan } from "@/assets/products";
 
 const Home = () => {
   const highlights = [
