@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import productShowcase from "@/assets/product-showcase.jpg";
 
-type FilterCategory = "all" | "kaos" | "polo" | "jersey" | "tunik" | "logo";
+type FilterCategory = "all" | "kaos" | "polo" | "jersey" | "tunik" | "kemeja" | "jaket";
 
 const Catalog = () => {
   const [activeFilter, setActiveFilter] = useState<FilterCategory>("all");
@@ -57,7 +57,7 @@ const Catalog = () => {
       title: "Patch / Logo Bordir",
       description: "Logo atau patch custom dengan teknik bordir berkualitas tinggi. Awet dan tidak mudah rusak.",
       image: productShowcase,
-      category: "logo" as FilterCategory,
+      category: "kemeja" as FilterCategory,
     },
     {
       slug: "logo-print-custom",
@@ -74,7 +74,8 @@ const Catalog = () => {
     { key: "polo", label: "Polo" },
     { key: "jersey", label: "Jersey" },
     { key: "tunik", label: "Tunik" },
-    { key: "logo", label: "Custom Logo" },
+    { key: "kemeja", label: "Kemeja" },
+    { key: "jaket", label: "Jaket" },
   ];
 
   const filteredProducts = activeFilter === "all" 
