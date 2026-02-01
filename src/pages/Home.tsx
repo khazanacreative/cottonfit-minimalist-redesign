@@ -204,7 +204,7 @@ const Home = () => {
                 variant="outline"
                 className="h-12 w-12 p-[2px]"
               >
-                <IconWA className="h-full w-full scale-110" />
+                <IconWA className="h-full w-full scale-200" />
               </Button>
             </a>
 
@@ -213,7 +213,7 @@ const Home = () => {
                 variant="outline"
                 className="h-12 w-12 p-[2px]"
               >
-                <IconIG className="h-full w-full scale-110" />
+                <IconIG className="h-full w-full scale-200" />
               </Button>
             </a>
 
@@ -222,7 +222,7 @@ const Home = () => {
                 variant="outline"
                 className="h-12 w-12 p-[2px]"
               >
-                <IconTiktok className="h-full w-full scale-110" />
+                <IconTiktok className="h-full w-full scale-200" />
               </Button>
             </a>
 
@@ -231,7 +231,7 @@ const Home = () => {
                 variant="outline"
                 className="h-12 w-12 p-[2px]"
               >
-                <IconShopee className="h-full w-full scale-110" />
+                <IconShopee className="h-full w-full scale-200" />
               </Button>
             </a>
           </div>
