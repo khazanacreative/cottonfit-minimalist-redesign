@@ -147,7 +147,8 @@ ${formData.message}`;
               {/* Google Maps */}
               <Card className="card-elegant overflow-hidden">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.9!2d112.7!3d-7.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMjcnMDAuMCJTIDExMsKwNDInMDAuMCJF!5e0!3m2!1sen!2sid!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.151617475759!2d112.72305412454872!3d-7.443518973345264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e73e860771c5%3A0xc0319574652846ca!2sKantor%20%26%20Gudang%20Cottonfit!5e1!3m2!1sen!2sus!4v1769908921745!5m2!1sen!2sus
+"
                   width="100%"
                   height="300"
                   style={{ border: 0 }}
