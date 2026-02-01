@@ -209,7 +209,7 @@ const Home = () => {
             </a>
 
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/cottonfit_wear"
               target="_blank"
               aria-label="Instagram"
               className="group"
@@ -218,7 +218,7 @@ const Home = () => {
             </a>
 
             <a
-              href="https://tiktok.com"
+              href="https://www.tiktok.com/@cottonfitwear"
               target="_blank"
               aria-label="TikTok"
               className="group"
@@ -227,7 +227,7 @@ const Home = () => {
             </a>
 
             <a
-              href="https://shopee.co.id"
+              href="https://shopee.co.id/firdausfithradi"
               target="_blank"
               aria-label="Shopee"
               className="group"
