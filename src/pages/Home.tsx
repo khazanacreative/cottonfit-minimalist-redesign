@@ -185,7 +185,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CTA Section – Icon Only */}
+      {/* CTA Section – Compact Icon Buttons */}
       <section className="py-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <Users className="h-16 w-16 mx-auto mb-6 opacity-90" />
@@ -199,27 +199,43 @@ const Home = () => {
           </p>
 
           <div className="flex justify-center gap-4">
-            <a href="https://wa.me/6282228302403" target="_blank">
-              <Button size="icon" variant="secondary">
-                <IconWA className="h-6 w-6" />
+            <a href="https://wa.me/6282228302403" target="_blank" aria-label="WhatsApp">
+              <Button
+                size="icon"
+                variant="outline"
+                className="h-14 w-14 p-1"
+              >
+                <IconWA className="h-10 w-10" />
               </Button>
             </a>
 
-            <a href="https://instagram.com/USERNAME" target="_blank">
-              <Button size="icon" variant="secondary">
-                <IconIG className="h-6 w-6" />
+            <a href="https://instagram.com/USERNAME" target="_blank" aria-label="Instagram">
+              <Button
+                size="icon"
+                variant="outline"
+                className="h-14 w-14 p-1"
+              >
+                <IconIG className="h-10 w-10" />
               </Button>
             </a>
 
-            <a href="https://www.tiktok.com/@USERNAME" target="_blank">
-              <Button size="icon" variant="secondary">
-                <IconTiktok className="h-6 w-6" />
+            <a href="https://www.tiktok.com/@USERNAME" target="_blank" aria-label="TikTok">
+              <Button
+                size="icon"
+                variant="outline"
+                className="h-14 w-14 p-1"
+              >
+                <IconTiktok className="h-10 w-10" />
               </Button>
             </a>
 
-            <a href="https://shopee.co.id/USERNAME" target="_blank">
-              <Button size="icon" variant="secondary">
-                <IconShopee className="h-6 w-6" />
+            <a href="https://shopee.co.id/USERNAME" target="_blank" aria-label="Shopee">
+              <Button
+                size="icon"
+                variant="outline"
+                className="h-14 w-14 p-1"
+              >
+                <IconShopee className="h-10 w-10" />
               </Button>
             </a>
           </div>
