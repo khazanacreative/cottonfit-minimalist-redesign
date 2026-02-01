@@ -199,40 +199,28 @@ const Home = () => {
           </p>
 
           <div className="flex justify-center gap-4">
-            <a href="https://wa.me/6282228302403" target="_blank" aria-label="WhatsApp">
-              <Button
-                variant="outline"
-                className="h-12 w-12 p-[2px]"
-              >
-                <IconWA className="h-full w-full scale-200" />
-              </Button>
+            <a href="https://wa.me/6282228302403" target="_blank">
+              <button className="h-14 w-14 rounded-xl border flex items-center justify-center p-0">
+                <IconWA className="h-[80%] w-[80%]" />
+              </button>
             </a>
 
-            <a href="https://instagram.com/USERNAME" target="_blank" aria-label="Instagram">
-              <Button
-                variant="outline"
-                className="h-12 w-12 p-[2px]"
-              >
-                <IconIG className="h-full w-full scale-200" />
-              </Button>
+            <a href="https://instagram.com" target="_blank">
+              <button className="h-14 w-14 rounded-xl border flex items-center justify-center p-0">
+                <IconIG className="h-[80%] w-[80%]" />
+              </button>
             </a>
 
-            <a href="https://www.tiktok.com/@USERNAME" target="_blank" aria-label="TikTok">
-              <Button
-                variant="outline"
-                className="h-12 w-12 p-[2px]"
-              >
-                <IconTiktok className="h-full w-full scale-200" />
-              </Button>
+            <a href="https://tiktok.com" target="_blank">
+              <button className="h-14 w-14 rounded-xl border flex items-center justify-center p-0">
+                <IconTiktok className="h-[80%] w-[80%]" />
+              </button>
             </a>
 
-            <a href="https://shopee.co.id/USERNAME" target="_blank" aria-label="Shopee">
-              <Button
-                variant="outline"
-                className="h-12 w-12 p-[2px]"
-              >
-                <IconShopee className="h-full w-full scale-200" />
-              </Button>
+            <a href="https://shopee.co.id" target="_blank">
+              <button className="h-14 w-14 rounded-xl border flex items-center justify-center p-0">
+                <IconShopee className="h-[80%] w-[80%]" />
+              </button>
             </a>
           </div>
         </div>
