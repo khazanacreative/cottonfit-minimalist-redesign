@@ -198,29 +198,41 @@ const Home = () => {
             Hubungi kami melalui media sosial favorit Anda
           </p>
 
-          <div className="flex justify-center gap-4">
-            <a href="https://wa.me/6282228302403" target="_blank">
-              <button className="h-14 w-14 rounded-xl border flex items-center justify-center p-0">
-                <IconWA className="h-[80%] w-[80%]" />
-              </button>
+          <div className="flex justify-center gap-6">
+            <a
+              href="https://wa.me/6282228302403"
+              target="_blank"
+              aria-label="WhatsApp"
+              className="group"
+            >
+              <IconWA className="h-12 w-12 text-gray-400 transition-all duration-300 group-hover:scale-125 group-hover:text-green-500 drop-shadow-md group-hover:drop-shadow-lg" />
             </a>
 
-            <a href="https://instagram.com" target="_blank">
-              <button className="h-14 w-14 rounded-xl border flex items-center justify-center p-0">
-                <IconIG className="h-[80%] w-[80%]" />
-              </button>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              aria-label="Instagram"
+              className="group"
+            >
+              <IconIG className="h-12 w-12 text-gray-400 transition-all duration-300 group-hover:scale-125 group-hover:text-pink-500 drop-shadow-md group-hover:drop-shadow-lg" />
             </a>
 
-            <a href="https://tiktok.com" target="_blank">
-              <button className="h-14 w-14 rounded-xl border flex items-center justify-center p-0">
-                <IconTiktok className="h-[80%] w-[80%]" />
-              </button>
+            <a
+              href="https://tiktok.com"
+              target="_blank"
+              aria-label="TikTok"
+              className="group"
+            >
+              <IconTiktok className="h-12 w-12 text-gray-400 transition-all duration-300 group-hover:scale-125 group-hover:text-black drop-shadow-md group-hover:drop-shadow-lg" />
             </a>
 
-            <a href="https://shopee.co.id" target="_blank">
-              <button className="h-14 w-14 rounded-xl border flex items-center justify-center p-0">
-                <IconShopee className="h-[80%] w-[80%]" />
-              </button>
+            <a
+              href="https://shopee.co.id"
+              target="_blank"
+              aria-label="Shopee"
+              className="group"
+            >
+              <IconShopee className="h-12 w-12 text-gray-400 transition-all duration-300 group-hover:scale-125 group-hover:text-orange-500 drop-shadow-md group-hover:drop-shadow-lg" />
             </a>
           </div>
         </div>
