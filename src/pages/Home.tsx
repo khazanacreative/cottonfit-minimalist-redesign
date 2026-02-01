@@ -202,36 +202,36 @@ const Home = () => {
             <a href="https://wa.me/6282228302403" target="_blank" aria-label="WhatsApp">
               <Button
                 variant="outline"
-                className="h-24 w-24 p-[2px]"
+                className="h-12 w-12 p-[2px]"
               >
-                <IconWA className="h-full w-full" />
+                <IconWA className="h-full w-full scale-110" />
               </Button>
             </a>
 
             <a href="https://instagram.com/USERNAME" target="_blank" aria-label="Instagram">
               <Button
                 variant="outline"
-                className="h-24 w-24 p-[2px]"
+                className="h-12 w-12 p-[2px]"
               >
-                <IconIG className="h-full w-full" />
+                <IconIG className="h-full w-full scale-110" />
               </Button>
             </a>
 
             <a href="https://www.tiktok.com/@USERNAME" target="_blank" aria-label="TikTok">
               <Button
                 variant="outline"
-                className="h-24 w-24 p-[2px]"
+                className="h-12 w-12 p-[2px]"
               >
-                <IconTiktok className="h-full w-full" />
+                <IconTiktok className="h-full w-full scale-110" />
               </Button>
             </a>
 
             <a href="https://shopee.co.id/USERNAME" target="_blank" aria-label="Shopee">
               <Button
                 variant="outline"
-                className="h-24 w-24 p-[2px]"
+                className="h-12 w-12 p-[2px]"
               >
-                <IconShopee className="h-full w-full" />
+                <IconShopee className="h-full w-full scale-110" />
               </Button>
             </a>
           </div>
