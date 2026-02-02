@@ -2,7 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, CheckCircle2, MessageCircle } from "lucide-react";
-import { KaosKomunitas, KaosDaycare, KaosSatuan, Jersey, JerseyBola, Jaket, Kemeja, TunikCustom, KaosAngkatan, KaosCafe, KaosCombedDaycare, KaosPolo, KaosRetail, KaosUmkm } from "@/assets/products";
+import { KaosKomunitas, KaosDaycare, KaosSatuan, Jersey, JerseyBola, Jaket, Kemeja, TunikCustom, KaosAngkatan, KaosCafe, KaosCombedDaycare, KaosPolo, KaosPoloCombed, KaosRetail, KaosUmkm } from "@/assets/products";
 
 const products = [
   {
@@ -55,6 +55,20 @@ const products = [
       "Cocok untuk seragam kerja",
       "Bisa bordir atau sablon logo",
       "Tampilan profesional",
+    ],
+  },
+  {
+    slug: "kaos-polo-combed",
+    title: "Kaos Polo Combed",
+    description: "Polo Combed dibuat dari bahan katun combed yang lembut, halus, dan nyaman di kulit. Adem dipakai seharian dengan tampilan rapi dan lebih premium. Cocok untuk seragam kerja, komunitas, event, maupun brand fashion kasual.",
+    image: KaosPoloCombed,
+    features: [
+      "Bahan katun combed lembut dan halus di kulit",
+      "Adem dan nyaman dipakai seharian",
+      "Menyerap keringat dengan baik",
+      "Tampilan lebih rapi dan premium",
+      "Fleksibel untuk gaya formal kasual maupun santai",
+      "Cocok untuk seragam, komunitas, event, dan brand custom",
     ],
   },
   {

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ShoppingBag } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { KaosKomunitas, KaosDaycare, KaosSatuan, Jersey, JerseyBola, Jaket, Kemeja, TunikCustom, KaosAngkatan, KaosCafe, KaosCombedDaycare, KaosPolo, KaosRetail, KaosUmkm } from "@/assets/products";
+import { KaosKomunitas, KaosDaycare, KaosSatuan, Jersey, JerseyBola, Jaket, Kemeja, TunikCustom, KaosAngkatan, KaosCafe, KaosCombedDaycare, KaosPolo, KaosPoloCombed, KaosRetail, KaosUmkm } from "@/assets/products";
 
 type FilterCategory = "all" | "kaos" | "polo" | "jersey" | "tunik" | "kemeja" | "jaket";
 
@@ -36,6 +36,13 @@ const Catalog = () => {
       title: "Kaos Polo Custom",
       description: "Polo shirt custom untuk kebutuhan formal atau semi-formal. Tersedia dengan berbagai pilihan kerah dan warna.",
       image: KaosPolo,
+      category: "polo" as FilterCategory,
+    },
+    {
+      slug: "kaos-polo-combed",
+      title: "Kaos Polo Combed",
+      description: "Polo Combed dibuat dari bahan katun combed yang lembut, halus, dan nyaman di kulit.",
+      image: KaosPoloCombed,
       category: "polo" as FilterCategory,
     },
     {
