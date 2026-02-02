@@ -123,6 +123,20 @@ const products = [
       "Cocok untuk seragam kerja, kemeja lapangan, dan outfit formal kasual",
     ],
   },
+  {
+    slug: "jaket-fleece",
+    title: "Jaket Fleece",
+    description: "Jaket Fleece Premium yang hangat, lembut, dan nyaman dipakai seharian. Bahannya tebal sedang namun tetap ringan, cocok untuk cuaca dingin maupun ruangan ber-AC. Desain simpel modern dengan resleting depan dan kantong samping fungsional, mudah dipadukan untuk aktivitas harian, seragam komunitas, atau kebutuhan custom brand.",
+    image: Jaket,
+    features: [
+      "Hangat tanpa terasa berat",
+      "Bahan lembut dan nyaman di kulit",
+      "Cukup menyerap hawa dingin (cocok indoor & outdoor)",
+      "Tetap nyaman dipakai lama, tidak kaku",
+      "Tampilan kasual modern, mudah dipadukan",
+      "Cocok untuk seragam, komunitas, dan custom",
+    ],
+  },
 ];
 
 const ProductDetail = () => {
