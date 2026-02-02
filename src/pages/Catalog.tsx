@@ -76,7 +76,7 @@ const Catalog = () => {
     {
       slug: "jaket-fleece",
       title: "Jaket Fleece",
-      description: "Jaket Fleece Premium yang hangat, lembut, dan nyaman dipakai seharian. Bahannya tebal sedang namun tetap ringan, cocok untuk cuaca dingin maupun ruangan ber-AC. Desain simpel modern dengan resleting depan dan kantong samping fungsional, mudah dipadukan untuk aktivitas harian, seragam komunitas, atau kebutuhan custom brand.",
+      description: "Jaket Fleece Premium yang hangat, lembut, dan nyaman dipakai seharian.",
       image: Jaket,
       category: "jaket" as FilterCategory,
     },  
