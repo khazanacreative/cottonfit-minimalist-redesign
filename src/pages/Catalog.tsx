@@ -66,6 +66,13 @@ const Catalog = () => {
       image: KaosUmkm,
       category: "kaos" as FilterCategory,
     },
+    {
+      slug: "kemeja-custom",
+      title: "Kemeja",
+      description: "Kemeja Nagata Drill memadukan tampilan rapi dengan kekuatan bahan drill yang tebal dan tahan lama. Nyaman dipakai seharian, tetap terlihat profesional untuk aktivitas indoor maupun lapangan ringan.",
+      image: Kemeja,
+      category: "kemeja" as FilterCategory,
+    },  
   ];
 
   const filters: { key: FilterCategory; label: string }[] = [
