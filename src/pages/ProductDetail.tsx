@@ -101,7 +101,7 @@ const products = [
     slug: "patch-logo-bordir",
     title: "Patch / Logo Bordir",
     description: "Logo atau patch custom dengan teknik bordir berkualitas tinggi. Awet dan tidak mudah rusak.",
-    image: KaosDaycare,
+    image: KaosPolo,
     features: [
       "Teknik bordir komputer",
       "Hasil rapi dan detail",
