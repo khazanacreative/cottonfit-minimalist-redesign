@@ -101,7 +101,7 @@ const products = [
     slug: "patch-logo-bordir",
     title: "Patch / Logo Bordir",
     description: "Logo atau patch custom dengan teknik bordir berkualitas tinggi. Awet dan tidak mudah rusak.",
-    image: KaosUmkm,
+    image: KaosDaycare,
     features: [
       "Teknik bordir komputer",
       "Hasil rapi dan detail",
@@ -114,7 +114,7 @@ const products = [
     slug: "logo-print-custom",
     title: "Logo Print Custom",
     description: "Printing logo dengan berbagai teknik: DTF, Sablon, atau Digital Print. Hasil tajam dan tahan lama.",
-    image: KaosDaycare,
+    image: KaosUmkm,
     features: [
       "Teknik DTF, Sablon, Digital Print",
       "Warna cerah dan tajam",
