@@ -109,6 +109,20 @@ const products = [
       "Hasil profesional",
     ],
   },
+  {
+    slug: "kemeja-custom",
+    title: "Kemeja",
+    description: "Kemeja Nagata Drill memadukan tampilan rapi dengan kekuatan bahan drill yang tebal dan tahan lama. Nyaman dipakai seharian, tetap terlihat profesional untuk aktivitas indoor maupun lapangan ringan.",
+    image: Kemeja,
+    features: [
+      "Teknik DTF, Sablon, Digital Print",
+      "Lebih awet & tidak mudah sobek",
+      "Tampilan rapi dan terlihat profesional",
+      "Nyaman untuk pemakaian harian maupun kerja lapangan",
+      "Warna cenderung lebih tahan lama",
+      "Cocok untuk seragam kerja, kemeja lapangan, dan outfit formal kasual",
+    ],
+  },
 ];
 
 const ProductDetail = () => {
