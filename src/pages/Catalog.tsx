@@ -33,8 +33,8 @@ const Catalog = () => {
     },
     {
       slug: "kaos-polo-custom",
-      title: "Kaos Polo Custom",
-      description: "Polo shirt custom untuk kebutuhan formal atau semi-formal. Tersedia dengan berbagai pilihan kerah dan warna.",
+      title: "Kaos Polo CVC",
+      description: "Polo CVC menggunakan bahan Chief Value Cotton (campuran katun dan polyester) yang nyaman dipakai namun lebih tahan bentuk.",
       image: KaosPolo,
       category: "polo" as FilterCategory,
     },

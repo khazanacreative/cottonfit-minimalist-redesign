@@ -46,15 +46,15 @@ const products = [
   },
   {
     slug: "kaos-polo-custom",
-    title: "Kaos Polo Custom",
-    description: "Polo shirt custom untuk kebutuhan formal atau semi-formal. Tersedia dengan berbagai pilihan kerah dan warna.",
+    title: "Kaos Polo CVC",
+    description: "Polo CVC menggunakan bahan Chief Value Cotton (campuran katun dan polyester) yang nyaman dipakai namun lebih tahan bentuk. Teksturnya halus, tidak mudah kusut, dan tetap adem untuk aktivitas harian dengan tampilan rapi.",
     image: KaosPolo,
     features: [
-      "Bahan polo berkualitas",
-      "Berbagai model kerah",
-      "Cocok untuk seragam kerja",
-      "Bisa bordir atau sablon logo",
-      "Tampilan profesional",
+      "Lebih awet dan tidak mudah melar",
+      "Tidak gampang kusut, tampilan tetap rapi",
+      "Nyaman dan cukup menyerap keringat",
+      "Warna lebih tahan lama",
+      "Cocok untuk seragam kerja, komunitas, dan event",
     ],
   },
   {
