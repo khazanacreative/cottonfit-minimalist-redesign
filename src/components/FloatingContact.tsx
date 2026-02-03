@@ -54,24 +54,21 @@ const FloatingContact = () => {
           className="h-5 w-5"
           aria-hidden="true"
         >
-          {/* bulatan biru */}
-          <circle cx="256" cy="256" r="256" fill="#2563EB" />
+          {/* bulatan biru tua */}
+          <circle cx="256" cy="256" r="256" fill="#1E40AF" />
 
-          {/* tas (garis putih) */}
-          <rect
-            x="176"
-            y="208"
-            width="160"
-            height="128"
-            rx="12"
+          {/* badan tas belanja */}
+          <path
+            d="M176 216h160l-16 168H192l-16-168z"
             fill="none"
             stroke="white"
             strokeWidth="20"
+            strokeLinejoin="round"
           />
 
           {/* pegangan tas */}
           <path
-            d="M224 208v-16a32 32 0 0 1 64 0v16"
+            d="M216 216v-32a40 40 0 0 1 80 0v32"
             fill="none"
             stroke="white"
             strokeWidth="20"
