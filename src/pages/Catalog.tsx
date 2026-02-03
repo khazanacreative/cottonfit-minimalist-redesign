@@ -53,11 +53,25 @@ const Catalog = () => {
       category: "jersey" as FilterCategory,
     },
     {
+      slug: "jersey-emboss",
+      title: "Jersey Emboss",
+      description: "Memiliki tekstur motif timbul yang unik sehingga tampilan lebih premium dan sporty.",
+      image: JerseyEmboss,
+      category: "jersey" as FilterCategory,
+    },
+    {
       slug: "tunik-custom",
       title: "Tunik Custom",
       description: "Tunik custom dengan berbagai model dan desain. Cocok untuk seragam kerja atau acara formal.",
       image: TunikCustom,
       category: "tunik" as FilterCategory,
+    },
+    {
+      slug: "jersey-airwalk",
+      title: "Jersey Airwalk",
+      description: "Tekstur lebih berpori sehingga cepat menyerap dan menguapkan keringat.",
+      image: JerseyAirwalk,
+      category: "jersey" as FilterCategory,
     },
     {
       slug: "patch-logo-bordir",
@@ -72,6 +86,13 @@ const Catalog = () => {
       description: "Printing logo dengan berbagai teknik: DTF, Sablon, atau Digital Print. Hasil tajam dan tahan lama.",
       image: KaosUmkm,
       category: "kaos" as FilterCategory,
+    },
+    {
+      slug: "jersey-milano",
+      title: "Jersey Milano",
+      description: "Bahan halus, ringan, dan nyaman di kulit dengan sirkulasi udara baik.",
+      image: JerseyMilano,
+      category: "jersey" as FilterCategory,
     },
     {
       slug: "kemeja-custom",
