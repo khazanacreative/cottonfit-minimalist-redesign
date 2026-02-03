@@ -4,7 +4,6 @@ export { default as JerseyBola } from "./jersey-tim-bola.jpeg";
 export { default as JerseyMilano } from "./jersey-milano.jpeg";
 export { default as JerseyEmboss } from "./jersey-emboss.jpeg";
 export { default as JerseyAirwalk } from "./jersey-airwalk.jpeg";
-export { default as Jersey } from "./jersey-agustusan.jpeg";
 export { default as KaosAngkatan } from "./kaos-combed-angkatan.jpeg";
 export { default as KaosUmkm } from "./kaos-combed-umkm.jpeg";
 export { default as KaosCafe } from "./kaos-combed-cafe.jpeg";
