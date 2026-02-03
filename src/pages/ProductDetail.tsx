@@ -101,7 +101,7 @@ const products = [
   {
     slug: "jersey-airwalk",
     title: "Jersey Airwalk",
-    description: "Tekstur lebih berpori sehingga cepat menyerap dan menguapkan keringat.",
+    description: "Tekstur lebih berpori sehingga cepat menyerap dan menguapkan keringat. Ringan, tidak mudah gerah, ideal untuk aktivitas intens dan cuaca panas.",
     image: JerseyAirwalk,
     features: [
       "Sirkulasi udara sangat baik, terasa lebih adem",
@@ -115,7 +115,7 @@ const products = [
   {
     slug: "jersey-milano",
     title: "Jersey Milano",
-    description: "Bahan halus, ringan, dan nyaman di kulit dengan sirkulasi udara baik.",
+    description: "Bahan halus, ringan, dan nyaman di kulit dengan sirkulasi udara baik. Cocok untuk jersey olahraga maupun aktivitas outdoor karena tetap adem saat dipakai bergerak.",
     image: JerseyMilano,
     features: [
       "Bahan ringan dan nyaman dipakai bergerak",
