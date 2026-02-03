@@ -54,13 +54,28 @@ const FloatingContact = () => {
           className="h-5 w-5"
           aria-hidden="true"
         >
-          {/* background */}
+          {/* bulatan biru */}
           <circle cx="256" cy="256" r="256" fill="#2563EB" />
 
-          {/* tas (bolong) */}
+          {/* tas (garis putih) */}
+          <rect
+            x="176"
+            y="208"
+            width="160"
+            height="128"
+            rx="12"
+            fill="none"
+            stroke="white"
+            strokeWidth="20"
+          />
+
+          {/* pegangan tas */}
           <path
-            d="M336 176H176c-17.7 0-32 14.3-32 32v128c0 17.7 14.3 32 32 32h160c17.7 0 32-14.3 32-32V208c0-17.7-14.3-32-32-32zm-80-24c22.1 0 40 17.9 40 40h-24c0-8.8-7.2-16-16-16s-16 7.2-16 16h-24c0-22.1 17.9-40 40-40z"
-            fill="white"
+            d="M224 208v-16a32 32 0 0 1 64 0v16"
+            fill="none"
+            stroke="white"
+            strokeWidth="20"
+            strokeLinecap="round"
           />
         </svg>
       ),
