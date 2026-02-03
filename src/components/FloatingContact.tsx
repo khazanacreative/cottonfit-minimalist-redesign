@@ -51,7 +51,9 @@ const FloatingContact = () => {
       icon: (
         <svg
           viewBox="0 0 512 512"
-          className="h-5 w-5 fill-current">
+          className="h-5 w-5 fill-current text-blue-600"
+          aria-hidden="true"
+        >
           <path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256 256-114.6 256-256S397.4 0 256 0z" />
           <path d="M336 176H176c-17.7 0-32 14.3-32 32v128c0 17.7 14.3 32 32 32h160c17.7 0 32-14.3 32-32V208c0-17.7-14.3-32-32-32zm-80-24c22.1 0 40 17.9 40 40h-24c0-8.8-7.2-16-16-16s-16 7.2-16 16h-24c0-22.1 17.9-40 40-40z" />
         </svg>
