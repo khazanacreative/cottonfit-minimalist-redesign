@@ -97,7 +97,7 @@ const FloatingContact = () => {
       {/* Floating Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="relative w-16 h-16 rounded-full bg-primary shadow-lg hover:shadow-xl transition-all hover:scale-105 flex items-center justify-center group"
+        className="relative w-16 h-16 rounded-full bg-background/80 backdrop-blur border border-border shadow-lg hover:shadow-xl transition-all hover:scale-105 flex items-center justify-center group"
         aria-label="Contact menu"
       >
         {isOpen ? (
