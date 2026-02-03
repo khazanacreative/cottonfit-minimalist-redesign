@@ -51,11 +51,11 @@ const FloatingContact = () => {
       icon: (
         <svg
           viewBox="0 0 24 24"
-          className="h-5 w-5"
+          className="h-5 w-5 fill-current"
           aria-hidden="true"
         >
           {/* background bulat biru tua */}
-          <circle cx="12" cy="12" r="12" fill="#1E40AF" />
+          <circle cx="12" cy="12" r="12" />
 
           {/* tas belanja */}
           <path
