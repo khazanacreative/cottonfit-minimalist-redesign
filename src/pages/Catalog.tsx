@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ShoppingBag } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { KaosKomunitas, KaosDaycare, KaosSatuan, Jersey, JerseyBola, Jaket, Kemeja, TunikCustom, KaosAngkatan, KaosCafe, KaosCombedDaycare, KaosPolo, KaosPoloCombed, KaosRetail, KaosUmkm } from "@/assets/products";
+import { KaosKomunitas, KaosDaycare, KaosSatuan, JerseyMilano, JerseyEmboss, JerseyAirwalk, JerseyBola, Jaket, Kemeja, TunikCustom, KaosAngkatan, KaosCafe, KaosCombedDaycare, KaosPolo, KaosPoloCombed, KaosRetail, KaosUmkm } from "@/assets/products";
 
 type FilterCategory = "all" | "kaos" | "polo" | "jersey" | "tunik" | "kemeja" | "jaket";
 
