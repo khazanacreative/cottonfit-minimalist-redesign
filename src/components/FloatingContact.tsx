@@ -97,22 +97,25 @@ const FloatingContact = () => {
       {/* Floating Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="relative w-16 h-16 rounded-full bg-background/80 backdrop-blur border border-border shadow-lg hover:shadow-xl transition-all hover:scale-105 flex items-center justify-center group"
+        className="relative w-16 h-16 rounded-full bg-background/80 backdrop-blur border border-border shadow-lg transition-all duration-300 ease-out hover:scale-125 hover:shadow-2xl hover:rotate-12 hover:border-primary flex items-center justify-center group"
         aria-label="Contact menu"
       >
         {isOpen ? (
-          <X className="h-7 w-7 text-primary-foreground" />
+          <X className="h-7 w-7 text-primary transition-transform duration-300 group-hover:rotate-90" />
         ) : (
           <img 
             src={cottonIcon} 
             alt="Contact" 
-            className="w-10 h-10 object-contain"
+            className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-110 group-hover:rotate-[-12deg]"
           />
         )}
         
         {/* Pulse animation when closed */}
         {!isOpen && (
-          <span className="absolute inset-0 rounded-full bg-primary animate-ping opacity-20" />
+          <>
+            <span className="absolute inset-0 rounded-full bg-primary animate-ping opacity-20" />
+            <span className="absolute inset-0 rounded-full bg-primary/10 animate-pulse" />
+          </>
         )}
       </button>
     </div>
