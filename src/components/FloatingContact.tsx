@@ -97,7 +97,7 @@ const FloatingContact = () => {
       {/* Floating Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="relative w-16 h-16 rounded-full bg-background/80 backdrop-blur border border-border shadow-lg transition-all duration-300 ease-out hover:scale-125 hover:shadow-2xl hover:rotate-12 hover:border-primary flex items-center justify-center group"
+        className={`relative w-16 h-16 rounded-full bg-background/80 backdrop-blur border border-border shadow-lg transition-all duration-300 ease-out hover:scale-125 hover:shadow-2xl hover:rotate-12 hover:border-primary flex items-center justify-center group ${!isOpen ? 'animate-bounce-gentle' : ''}`}
         aria-label="Contact menu"
       >
         {isOpen ? (
@@ -111,9 +111,6 @@ const FloatingContact = () => {
         )}
         
         {/* Pulse animation when closed */}
-        {!isOpen && (
-          <span className="absolute inset-0 rounded-full bg-primary/20 animate-[shake_0.5s_ease-in-out_infinite]" />
-        )}
       </button>
     </div>
   );
