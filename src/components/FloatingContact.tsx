@@ -92,7 +92,7 @@ const FloatingContact = () => {
         <div className="absolute bottom-20 right-0 w-72 bg-background border border-border rounded-2xl shadow-xl overflow-hidden animate-fade-in">
           <div className="bg-primary p-4">
             <h3 className="text-primary-foreground font-semibold text-lg">Hubungi Kami</h3>
-            <p className="text-primary-foreground/80 text-sm">Pilih platform untuk menghubungi Cottonfit</p>
+            <p className="text-primary-foreground/80 text-sm">Pilih platform berikut untuk menghubungi Cottonfit</p>
           </div>
           
           <div className="p-3 space-y-2">
