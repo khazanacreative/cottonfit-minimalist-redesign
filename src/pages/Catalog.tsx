@@ -78,7 +78,7 @@ const Catalog = () => {
       title: "Patch / Logo Bordir",
       description: "Logo atau patch custom dengan teknik bordir berkualitas tinggi. Awet dan tidak mudah rusak.",
       image: KaosPolo,
-      category: ["polo", "kemeja"] as FilterCategory[]
+      category: ["polo", "kemeja"] as FilterCategory[],
     },
     {
       slug: "logo-print-custom",
