@@ -50,29 +50,35 @@ const FloatingContact = () => {
       url: "https://shopee.co.id/firdausfithradi",
       icon: (
         <svg
-          viewBox="0 0 512 512"
+          viewBox="0 0 24 24"
           className="h-5 w-5"
           aria-hidden="true"
         >
-          {/* bulatan biru tua */}
-          <circle cx="256" cy="256" r="256" fill="#1E40AF" />
+          {/* background bulat biru tua */}
+          <circle cx="12" cy="12" r="12" fill="#1E40AF" />
 
-          {/* badan tas belanja */}
+          {/* tas belanja */}
           <path
-            d="M176 216h160l-16 168H192l-16-168z"
+            d="M7 9h10l-1 9H8L7 9z"
             fill="none"
             stroke="white"
-            strokeWidth="20"
+            strokeWidth="1.4"
             strokeLinejoin="round"
           />
 
-          {/* pegangan tas */}
+          {/* pegangan */}
           <path
-            d="M216 216v-32a40 40 0 0 1 80 0v32"
+            d="M9.5 9V8a2.5 2.5 0 0 1 5 0v1"
             fill="none"
             stroke="white"
-            strokeWidth="20"
+            strokeWidth="1.4"
             strokeLinecap="round"
+          />
+
+          {/* huruf S */}
+          <path
+            d="M12.8 11.2c-.9-.3-1.6-.5-1.6-1 0-.4.4-.7 1-.7.6 0 1 .3 1.2.8l1.4-.4c-.3-1-1.3-1.7-2.6-1.7-1.6 0-2.7.9-2.7 2.1 0 1.3 1.1 1.8 2.3 2.1.9.3 1.6.5 1.6 1.1 0 .5-.5.8-1.2.8-.8 0-1.3-.4-1.5-1l-1.5.4c.4 1.2 1.6 1.9 3 1.9 1.7 0 2.9-.9 2.9-2.2 0-1.4-1.2-1.9-2.3-2.2z"
+            fill="white"
           />
         </svg>
       ),
