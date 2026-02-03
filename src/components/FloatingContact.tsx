@@ -112,10 +112,7 @@ const FloatingContact = () => {
         
         {/* Pulse animation when closed */}
         {!isOpen && (
-          <>
-            <span className="absolute inset-0 rounded-full bg-primary animate-ping opacity-20" />
-            <span className="absolute inset-0 rounded-full bg-primary/10 animate-pulse" />
-          </>
+          <span className="absolute inset-0 rounded-full bg-primary/20 animate-[shake_0.5s_ease-in-out_infinite]" />
         )}
       </button>
     </div>
