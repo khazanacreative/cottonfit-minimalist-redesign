@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -37,25 +33,20 @@ All colors MUST be HSL.
     --ring: 220 90% 30%;
 
     --radius: 1rem;
-    
-    --hero-gradient: linear-gradient(135deg, hsl(220 90% 30%) 0%, hsl(220 80% 40%) 100%);
-    --card-shadow: 0 4px 20px -4px hsl(220 90% 30% / 0.1);
+
+    --hero-gradient: linear-gradient(135deg, hsl(220 90% 28%) 0%, hsl(225 80% 45%) 100%);
+    --hero-gradient-hover: linear-gradient(135deg, hsl(220 90% 22%) 0%, hsl(225 80% 38%) 100%);
+    --card-shadow: 0 4px 24px -4px hsl(220 90% 30% / 0.12);
+    --card-shadow-hover: 0 8px 32px -4px hsl(220 90% 30% / 0.2);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -87,6 +78,7 @@ All colors MUST be HSL.
     --border: 220 20% 20%;
     --input: 220 20% 20%;
     --ring: 220 90% 50%;
+
     --sidebar-background: 220 25% 10%;
     --sidebar-foreground: 0 0% 98%;
     --sidebar-primary: 220 90% 50%;
@@ -103,27 +95,102 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
-  body {
-    @apply bg-background text-foreground;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  html {
+    scroll-behavior: smooth;
   }
-  
+
+  body {
+  @apply text-foreground;
+  background-color: #ffffff;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
   h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold;
+    @apply font-semibold tracking-tight;
+  }
+
+  /* Scrollbar custom */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--secondary));
+  }
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary) / 0.4);
+    border-radius: 999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary) / 0.7);
   }
 }
 
 @layer utilities {
-  .hover-lift {
-    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
-  }
-  
+
+  /* Card */
   .card-elegant {
-    @apply rounded-2xl bg-card border border-border shadow-sm;
+    @apply rounded-2xl bg-card border border-border;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition-smooth);
   }
-  
+  .card-elegant:hover {
+    box-shadow: var(--card-shadow-hover);
+  }
+
+  /* Hover lift */
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-2;
+  }
+
+  /* Button gradient */
   .btn-primary-gradient {
     background: var(--hero-gradient);
     @apply text-primary-foreground;
+    transition: var(--transition-smooth);
+  }
+  .btn-primary-gradient:hover {
+    background: var(--hero-gradient-hover);
+    @apply scale-[1.02];
+  }
+  .btn-primary-gradient:active {
+    @apply scale-[0.98];
+  }
+
+  /* Fade in animation */
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out both;
+  }
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out both;
+  }
+  .animate-fade-in-delay {
+    animation: fadeIn 0.6s ease-out 0.2s both;
+  }
+
+  /* Section transition */
+  .section-transition {
+    @apply transition-all duration-500;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
