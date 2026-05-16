@@ -1,4 +1,3 @@
-import './catalog.css';
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ShoppingBag } from "lucide-react";
@@ -207,23 +206,11 @@ const Catalog = () => {
           <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
             Kami siap membantu mewujudkan desain custom sesuai kebutuhan Anda. Hubungi kami untuk konsultasi gratis!
           </p>
-          
-          <div className="flex flex-col items-center gap-4">
-            {/* Tombol WhatsApp */}
-            <a href="https://wa.me/6282228302403" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="btn-primary-gradient text-lg px-8">
-                Konsultasi via WhatsApp
-              </Button>
-            </a>
-
-            {/* Tombol Smart Chat yang diperbaiki */}
-            <Link to="http://localhost:8501/" target="_blank"> 
-              <Button size="lg" className="bg-red-500 hover:bg-red-600 text-white text-lg px-20 btn-smart-chat">
-                Smart Chat
-              </Button>
-            </Link>
-          </div>
-
+          <a href="https://wa.me/6282228302403" target="_blank" rel="noopener noreferrer">
+            <Button size="lg" className="btn-primary-gradient text-lg px-8">
+              Konsultasi via WhatsApp
+            </Button>
+          </a>
         </div>
       </section>
     </div>

@@ -1,4 +1,0 @@
-streamlit
-nltk
-numpy
-tensorflow>=2.16.1

@@ -9,7 +9,6 @@ import Footer from "./components/Footer";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Catalog from "./pages/Catalog";
-import Chatbot from "./pages/chatbot";
 import ProductDetail from "./pages/ProductDetail";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -31,11 +30,7 @@ const App = () => (
               <Route path="/catalog" element={<Catalog />} />
               <Route path="/catalog/:slug" element={<ProductDetail />} />
               <Route path="/contact" element={<Contact />} />
-              
-              {/* Route untuk Chatbot */}
-              <Route path="/chatbot" element={<Chatbot />} />
-              
-              {/* Catch-all route untuk 404 */}
+              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
