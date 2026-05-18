@@ -2,8 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Users, Star } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-tshirts.jpg";
 import productShowcase from "@/assets/product-showcase.jpg";
+import videoMenjahit from "@/assets/menjahit-baju.mp4";
+import videoCustomBaju from "@/assets/custom-baju.mp4";
 import { IconBebasCustom, IconCottonCombed, IconHarga, IconWA, IconIG, IconTiktok, IconShopee } from "@/assets/icons";
 import { KaosKomunitas, KaosDaycare, KaosSatuan } from "@/assets/products";
 
@@ -67,15 +68,19 @@ const Home = () => {
 
   return (
     <div className="flex flex-col">
+
       {/* Hero Section */}
       <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroImage})` }}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
         >
-          <div className="absolute inset-0 bg-white/70 from-primary/95 to-primary/70" />
-        </div>
-        
+          <source src={videoMenjahit} type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-white/65" />
         <div className="container relative z-10 mx-auto px-4 py-20 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-900 mb-6 leading-tight animate-fade-in">
             Jasa Pembuatan Kaos Custom Berkualitas
@@ -122,7 +127,6 @@ const Home = () => {
               Berbagai pilihan kaos custom berkualitas tinggi untuk semua kebutuhan Anda
             </p>
           </div>
-
           <div className="mb-12">
             <img
               src={productShowcase}
@@ -130,7 +134,6 @@ const Home = () => {
               className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg"
             />
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {categories.map((category, index) => (
               <Card key={index} className="card-elegant overflow-hidden hover-lift">
@@ -156,8 +159,47 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Kualitas Section dengan 2 Video */}
       <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl text-blue-900 font-bold mb-4">
+              Kualitas Terbaik Dimulai dari Proses
+            </h2>
+            <p className="text-muted-foreground text-gray-900 text-lg max-w-2xl mx-auto">
+              Kami memastikan setiap jahitan dikerjakan dengan penuh ketelitian, standar tinggi, dan tenaga terampil
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* Video 1 */}
+            <div className="rounded-2xl overflow-hidden shadow-lg">
+              <video controls className="w-full">
+                <source src={videoMenjahit} type="video/mp4" />
+              </video>
+              <div className="p-4 bg-secondary text-center">
+                <p className="font-semibold text-blue-900">Proses Menjahit</p>
+                <p className="text-sm text-muted-foreground">Ketelitian dalam setiap jahitan</p>
+              </div>
+            </div>
+
+            {/* Video 2 */}
+            <div className="rounded-2xl overflow-hidden shadow-lg">
+              <video controls className="w-full">
+                <source src={videoCustomBaju} type="video/mp4" />
+              </video>
+              <div className="p-4 bg-secondary text-center">
+                <p className="font-semibold text-blue-900">Proses Custom Baju</p>
+                <p className="text-sm text-muted-foreground">Dari desain hingga produk jadi</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-16 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Apa Kata Pelanggan Kami</h2>
@@ -165,7 +207,6 @@ const Home = () => {
               Kepuasan pelanggan adalah prioritas utama kami
             </p>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {testimonials.map((testimonial, index) => (
               <Card key={index} className="card-elegant p-6">
@@ -185,61 +226,35 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CTA Section – Compact Icon Buttons */}
+      {/* CTA Section */}
       <section className="py-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <Users className="h-16 w-16 mx-auto mb-6 opacity-90" />
-
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Siap Mewujudkan Desain Kaos Custom Anda?
           </h2>
-
           <p className="text-lg mb-8 opacity-90">
             Hubungi kami melalui media sosial favorit Anda
           </p>
-
           <div className="flex justify-center gap-6">
-            <a
-              href="https://wa.me/6282228302403"
-              target="_blank"
-              aria-label="WhatsApp"
-              className="group"
-            >
+            <a href="https://wa.me/6282228302403" target="_blank" aria-label="WhatsApp" className="group">
               <IconWA className="h-12 w-12 text-gray-400 transition-all duration-300 group-hover:scale-125 group-hover:text-green-500 drop-shadow-md group-hover:drop-shadow-lg" />
             </a>
-
-            <a
-              href="https://www.instagram.com/cottonfit_wear"
-              target="_blank"
-              aria-label="Instagram"
-              className="group"
-            >
+            <a href="https://www.instagram.com/cottonfit_wear" target="_blank" aria-label="Instagram" className="group">
               <IconIG className="h-12 w-12 text-gray-400 transition-all duration-300 group-hover:scale-125 group-hover:text-pink-500 drop-shadow-md group-hover:drop-shadow-lg" />
             </a>
-
-            <a
-              href="https://www.tiktok.com/@cottonfitwear"
-              target="_blank"
-              aria-label="TikTok"
-              className="group"
-            >
+            <a href="https://www.tiktok.com/@cottonfitwear" target="_blank" aria-label="TikTok" className="group">
               <IconTiktok className="h-12 w-12 text-gray-400 transition-all duration-300 group-hover:scale-125 group-hover:text-black drop-shadow-md group-hover:drop-shadow-lg" />
             </a>
-
-            <a
-              href="https://shopee.co.id/firdausfithradi"
-              target="_blank"
-              aria-label="Shopee"
-              className="group"
-            >
+            <a href="https://shopee.co.id/firdausfithradi" target="_blank" aria-label="Shopee" className="group">
               <IconShopee className="h-12 w-12 text-gray-400 transition-all duration-300 group-hover:scale-125 group-hover:text-orange-500 drop-shadow-md group-hover:drop-shadow-lg" />
             </a>
           </div>
         </div>
       </section>
+
     </div>
   );
 };
 
 export default Home;
-
